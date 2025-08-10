@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript test</h1>
+
+
+<h2>JavaScript use a function</h1>
+<!-- here will be the result displayed -->
+<p id="demo_val">?</p>
+
+
+
+
+
+<h2>JavaScript For Loop</h2>
+<!-- here will be the loop over array result displayed -->
+<p id="demo_id"></p>
+
+
+
+<script>
+// name and age are parameters of the function greet <br>
+function greet(name, age) {
+  return "Hello my name is: " + name + "<br>my age is:  " + age + " years old.";
+}
+
+document.getElementById("demo_val").innerHTML = greet("John", 21);
+
+
+
+
+// and try a array with for loop print
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo_id").innerHTML = text;
+</script>
+
+</body>
+</html>
