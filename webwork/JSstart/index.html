@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:LightBlue;">
+
+<h1>JavaScript test ( HTML inline script )</h1>
+
+<hr>
+
+<h2>JavaScript use a function</h2>
+<!-- here will be the function result displayed -->
+<p id="demo_func" style="color:Violet; font-weight: bold;" >?</p>
+
+
+<hr>
+
+
+<h2>JavaScript For Loop over Array</h2>
+<!-- here will be the loop over array result displayed -->
+<p id="demo_array" style="color:Violet; font-weight: bold;"></p>
+
+<hr>
+
+<script>
+// name and age are parameters of the function greet <br>
+function greet(name, age) {
+  return "Hello my name is: " + name + "<br>my age is:  " + age + " years old.";
+}
+
+document.getElementById("demo_func").innerHTML = greet("John", 21);
+
+
+
+
+// and try a array with for loop print
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo_array").innerHTML = text;
+</script>
+
+</body>
+</html>
